@@ -6,7 +6,7 @@ const app = express();
 //   res.sendFile(__dirname + "/index.html");
 // });
 
-app.get("/eat", function (req, res) {
+app.get("/pizza", function (req, res) {
   res.send("🍕");
 });
 
