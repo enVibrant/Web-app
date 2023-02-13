@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Required Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--enVibrant-->
+    <title>enVibrant</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <h1>Welcome!</h1>
+
+    <!--Alert-->
+    <div class="alert alert-primary" role="alert">
+      Hi! I just wanted to say that you are a wonderful person :D!
+    </div>
+
+    <div id="liveAlertPlaceholder">Click this?</div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Happy!</button>
+
+
+    <!--Collapse Tab-->
+    <div class="accordion" id="accordionExample">
+      <!--Item 1-->
+      <div class="accordion-item">
+        <!--Item 1 Title-->
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <!--Item 1 Description-->
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+
+      <!--Item 2-->
+      <div class="accordion-item">
+        <!--Item 2 Title-->
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <!--Item 2 Description-->
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+
+      <!--Item 3-->
+      <div class="accordion-item">
+        <!--Item 3 Title-->
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <!--Item 3 Description-->
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+<!--
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Home - VentureSketch</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/index.css" rel="stylesheet" type="text/css" />
+
+
+
+  </head>
+
+	<body>
+		<div class="topnav">
+      <img src="/pictures/VentureSketchLogoWordsRight.png" id="LogoTopLeftAlways">
+      <a href="/html/signUp.html"> Signup </a>
+      <a href="/html/login.html"> Login </a>
+      <a href="/html/artGallery.html">Art Gallery</a>
+      <a href="/html/artGallery.html">Art Gallery</a>
+      <a href="/html/listings.html"> Listings </a>
+			<a href="/html/inquiries.html">Inquiries</a>
+      <a href="https://venturesketchblog.lianwang.repl.co/index.html" target="_blank">Blog</a>
+			<a class="active" href="/html/index.html">Home</a>
+		</div>
+
+		<h1 id= "slogan"> your imagination<br>is our creation </h1>
+    
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    
+    <div class="browseLinks">
+      <a href="/html/artGallery.html"  id= "browseArtGallery">browse the art gallery</a> <br>
+      <a href="/html/listings.html" id= "browseListings">browse the NPOs' listings</a>
+    </div>
+		<script src="index.js">
+		</script>
+	</body>
+-->
+</html>
