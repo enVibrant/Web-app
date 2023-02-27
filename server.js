@@ -1,3 +1,4 @@
+const { text } = require("body-parser");
 const express = require("express");
 const app = express();
 //const MongoClient = require('mongodb').MongoClient;
@@ -8,6 +9,17 @@ const app = express();
 
 app.get("/pizza", function (req, res) {
   res.send("🍕");
+});
+
+app.get("/pizza/:eat", (req, res) => {
+  const count = req.params.eat;
+  let i = 0,
+    text = "";
+  while (i < count) {
+    text += "🍕";
+    i++;
+  }
+  res.send(text);
 });
 
 app.listen(3000, function () {
