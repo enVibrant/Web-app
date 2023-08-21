@@ -1,22 +1,27 @@
+/* IMPORTS */
 const express = require('express');
-const app = express();
-//const MongoClient = require('mongodb').MongoClient;
+const ejs = require("ejs");
+const { text } = require("body-parser");
 
-// app.get('/', function(req, res){
-//   res.sendFile(__dirname + '/index.html')
-// });
+/* INITIALIZING THE APP */
+const app = express();
+
+app.get('/', function(req, res){
+   res.render("index");
+});
 
 app.get("/eat", function(req, res) {
   res.send("I love pizza and food 🍕");
 });
 
-app.use(express.static('public'));
-const { text } = require("body-parser");
-//const MongoClient = require('mongodb').MongoClient;
+/* TEMPLATE ENGINE */
+app.set("view engine", "ejs");
 
-// app.get("/", function (req, res) {
-//   res.sendFile(__dirname + "/index.html");
-// });
+/* LOADING STATIC FILES */
+app.use(express.static('public'));
+app.use(express.static('views'));
+
+app.use(express.static('public'));
 
 app.get("/pizza", function (req, res) {
   res.send("🍕");
