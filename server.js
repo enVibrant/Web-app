@@ -1,16 +1,17 @@
 /* IMPORTS */
-const express = require('express');
+const express = require("express");
 const ejs = require("ejs");
 const { text } = require("body-parser");
 
 /* INITIALIZING THE APP */
 const app = express();
 
-app.get('/', function(req, res){
-   res.render("index");
+// Rendering the homepage: index
+app.get("/", function (req, res) {
+  res.render("index");
 });
 
-app.get("/eat", function(req, res) {
+app.get("/eat", function (req, res) {
   res.send("I love pizza and food 🍕");
 });
 
@@ -18,10 +19,8 @@ app.get("/eat", function(req, res) {
 app.set("view engine", "ejs");
 
 /* LOADING STATIC FILES */
-app.use(express.static('public'));
-app.use(express.static('views'));
-
-app.use(express.static('public'));
+app.use(express.static("public"));
+app.use(express.static("views"));
 
 app.get("/pizza", function (req, res) {
   res.send("🍕");
